@@ -1,7 +1,5 @@
 <?php
-use App\Core\Request;
-
 // ! front controller
-include("vendor/autoload.php");
-
-new App\Core\Request();
+include('bootstrap/init.php');
+echo"<pre>";
+print_r($_ENV['BASE_URL']);
