@@ -13,16 +13,16 @@ class Route{
     }
 
     public static function get($uri,$action = null){
-        self::add('get',$uri,$action = null);
+        self::add('get',$uri,$action);
     }
     public static function post($uri,$action = null){
-        self::add('post',$uri,$action = null);
+        self::add('post',$uri,$action);
     }
     public static function put($uri,$action = null){
-        self::put('get',$uri,$action = null);
+        self::add('get',$uri,$action);
     }
     public static function delete($uri,$action = null){
-        self::put('delete',$uri,$action = null);
+        self::add('delete',$uri,$action);
     }
 
     public static function routes(){
