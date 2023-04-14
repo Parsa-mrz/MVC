@@ -8,3 +8,6 @@ $dotenv = Dotenv\Dotenv::createImmutable(BASE_PATH);
 $dotenv->load();
 
 include(BASE_PATH . "/helpers/helpers.php");
+include(BASE_PATH . "/routes/web.php");
+
+$request = new App\Core\Request();
